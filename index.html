@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dasher Profit Splitter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Dasher Profit Splitter</h1>
+    <form id="profitForm">
+      <label for="profit">Total Profit ($):</label>
+      <input type="number" id="profit" name="profit" step="0.01" min="0" required />
+
+      <label for="mpg">Car Miles Per Gallon (MPG):</label>
+      <input type="number" id="mpg" name="mpg" step="0.1" min="1" required />
+
+      <label for="miles">Total Miles Driven:</label>
+      <input type="number" id="miles" name="miles" step="0.1" min="0" required />
+
+      <div class="gallon-price">Gallon Price: <span>$2.50</span> (fixed)</div>
+
+      <button type="submit">Calculate Split</button>
+    </form>
+    <div id="results" class="results"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
